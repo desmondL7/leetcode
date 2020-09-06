@@ -1,5 +1,5 @@
 class Solution:
-    def maxProfit(self, prices: List[int]) -> int:
+    def maxProfit(self, prices) -> int:
         maxProfit = 0
         smallest = float('inf')
         for i in prices:
@@ -10,3 +10,5 @@ class Solution:
                     maxProfit = i - smallest
 
         return maxProfit
+
+print(Solution().maxProfit([7,1]))
